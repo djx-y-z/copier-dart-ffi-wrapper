@@ -246,4 +246,8 @@ make check      # Check for native library updates
 
 ## License
 
-MIT
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting issues or pull requests. For major changes, please open an issue first to discuss what you would like to change.

@@ -240,14 +240,6 @@ strip_version_prefix:
   help: "Strip 'v' prefix from native version in archive names"
   default: false
 
-# -----------------------------------------------------------------------------
-# Computed variables (not shown to user)
-# -----------------------------------------------------------------------------
-current_year:
-  type: str
-  default: "{{ '%Y' | strftime }}"
-  when: false
-
 # =============================================================================
 # POST-GENERATION TASKS
 # =============================================================================

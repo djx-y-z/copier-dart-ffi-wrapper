@@ -7,7 +7,8 @@
 | `package_name` | str | Yes | - | Dart package name (lowercase) |
 | `description` | str | Yes | - | Package description |
 | `native_library_name` | str | Yes | - | Native library name |
-| `github_repo` | str | Yes | - | GitHub repository (user/repo) |
+| `github_repo` | str | Yes | - | GitHub repository of wrapper (user/repo) |
+| `native_repo` | str | Yes | - | GitHub repository of native library (user/repo) |
 | `wrapper_type` | str | No | `c` | `c` or `rust` |
 | `native_version` | str | Yes | - | Native library version |
 | `ffi_prefix` | str | Yes | - | FFI function prefix |
@@ -21,6 +22,7 @@
 | `cmake_extra_args` | str | No | `""` | Extra CMake args (C only) |
 | `cbindgen_config_path` | str | No | `cbindgen.toml` | cbindgen config (Rust only) |
 | `cbindgen_crate` | str | No | `""` | FFI crate name (Rust only) |
+| `needs_header_fixes` | bool | No | `true` | Include _fixHeaders() function |
 | `flutter_version` | str | No | `3.38.4` | Flutter version for FVM |
 | `dart_sdk_version` | str | No | `^3.10.0` | Dart SDK constraint |
 | `flutter_sdk_version` | str | No | `>=3.38.0` | Flutter SDK constraint |
@@ -29,7 +31,6 @@
 | `license` | str | No | `MIT` | Package license |
 | `topics` | str | No | `ffi,native` | Pub.dev topics (comma-separated) |
 | `strip_version_prefix` | bool | No | `false` | Strip 'v' from version |
-| `current_year` | str | No | Auto | Current year (computed) |
 
 ## Validators
 

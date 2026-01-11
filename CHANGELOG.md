@@ -37,10 +37,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Badges in template README.md (GitHub release, License)
 - Created `lib/src/` directory with `.gitkeep` in generated projects
 - CONTRIBUTING.md with development guidelines and testing instructions
+- Contributing section in README.md with link to CONTRIBUTING.md
 - Example commands with all parameters in README.md
 - Full absolute path in post-generation message
 - Information about updating topics and SECURITY.md in post-generation message
 - `_fixHeaders()` function available for both C and Rust wrappers (controlled by `needs_header_fixes`)
+
+### Changed
+
+- CHANGELOG.md date format changed from `{{ current_year }}-XX-XX` to `YYYY-MM-DD` placeholder
+
+### Removed
+
+- Removed `current_year` computed variable (replaced with static `YYYY-MM-DD` placeholder in templates)
 
 [Unreleased]: https://github.com/djx-y-z/copier-dart-ffi-wrapper/compare/v1.0.0...HEAD
 [1.0.0]: https://github.com/djx-y-z/copier-dart-ffi-wrapper/releases/tag/v1.0.0

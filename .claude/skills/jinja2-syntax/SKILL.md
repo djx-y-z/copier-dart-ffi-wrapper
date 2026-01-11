@@ -88,6 +88,8 @@ ffigen:
 ```jinja2
 {% if license == 'MIT' %}
 MIT License
-Copyright (c) {{ current_year }} {{ package_name }} authors
+Copyright (c) {{ package_name }} authors
+{% elif license == 'Apache-2.0' %}
+Apache License 2.0
 {% endif %}
 ```
